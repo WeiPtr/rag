@@ -1,0 +1,64 @@
+# =====================================================
+# Global ignores (recommended)
+# =====================================================
+.DS_Store
+Thumbs.db
+*.log
+*.env
+*.env.*
+.env.local
+.env.*.local
+.idea/
+.vscode/
+*.iml
+
+
+# =====================================================
+# Node / Frontend (Vue3 + TS + Vite)
+# =====================================================
+# dependency directories
+rag-frontend/node_modules/
+
+# production build
+rag-frontend/dist/
+rag-frontend/build/
+
+# Local env files for frontend
+rag-frontend/.env
+rag-frontend/.env.*
+
+
+# =====================================================
+# Python / Backend (FastAPI)
+# =====================================================
+# Python cache
+rag-backend/__pycache__/
+rag-backend/*.pyc
+rag-backend/*.pyo
+rag-backend/*.pyd
+
+# Virtual environment
+rag-backend/venv/
+rag-backend/.venv/
+
+# Python packaging / build
+rag-backend/build/
+rag-backend/dist/
+rag-backend/*.egg-info/
+
+# FastAPI specific ignores
+rag-backend/.mypy_cache/
+rag-backend/.pytest_cache/
+rag-backend/.ruff_cache/
+
+# Local environment files for backend
+rag-backend/.env
+rag-backend/.env.*
+rag-backend/*.db  # sqlite database (如果你使用 SQLite)
+
+
+# =====================================================
+# OS-level and editor settings
+# =====================================================
+*.swp
+*~
